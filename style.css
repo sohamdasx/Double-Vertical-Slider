@@ -50,6 +50,7 @@ body {
     position: absolute;
     top: 0;
     left: 35%;
+    transition: transform 0.5s ease-in-out;
 }
 
 .right-slide > div {
@@ -59,7 +60,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     overflow: hidden;
-    transition: transform 0.5s ease-in-out;
 }
 
 button {
