@@ -15,11 +15,16 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .left-slide{
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
 }
 
 .left-slide > div {
@@ -27,11 +32,16 @@ body {
     height: 100%;
     color: white;
     display: flex;
+    font-size: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 0;
-    left: 0;
+}
+
+.left-slide h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  margin-top: -30px;
 }
 
 .right-slide{
@@ -49,6 +59,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     overflow: hidden;
+    transition: transform 0.5s ease-in-out;
 }
 
 button {
